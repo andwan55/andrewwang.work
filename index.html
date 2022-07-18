@@ -1,7 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="stylesheet" href="index.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		
+		<title>Homepage</title>
+	</head>
+
+	<body>
+		<script src = "main.js"></script>
+		
+		<!-- page background elements -->
+		<div>
+			<img class="homepage-background" src = "Homepage Background.svg" alt="">
+			<img class="page-menu-graphic" src = "Page Menu Graphic.svg" alt="">
+		</div>
+		
+		<!-- logo elements -->
+		<div id="logo-container" onclick="window.location.href='index.html'">
+			<div class="logo-graphics">
+				<img src = "Logo Graphics.svg" alt="">
+			</div>
+			<div class = "logo-bkgd">
+				<img src="Asset - Logo Background.svg" alt="">
+			</div>
+			<div class = "logo">
+				<img src="portfolio_site_logo_v3.svg" alt="">
+			</div>
+		</div>
+		
+		<!-- top menu bar elements -->
+		<div>
+			<div class="top-menu-graphics">
+				<img src = "Top Menu Graphics.svg" alt="">
+			</div>
+			<div id="github-icon-container" onClick="window.open('https://github.com/andwan55','_blank')">
+				<div class="github-icon2">
+					<img src = "Github Icon 2.svg" alt="">
+				</div>
+				<div class="github-icon1">
+					<img src = "Github Icon 1.svg" alt="">
+				</div>
+			</div>
+			<div id="linkedin-icon-container" onClick="window.open('https://www.linkedin.com/in/andwan55/','_blank')">
+				<div class="linkedin-icon2">
+					<img src = "Linkedin Icon 2.svg" alt="">
+				</div>
+				<div class="linkedin-icon1">
+					<img src = "Linkedin Icon 1.svg" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<!-- left menu elements -->
+		<div>
+			<div id = "portfolio-link-container" onclick="window.location.href='index.html'">
+				<div class = "portfolio-link">portfolio</div>
+				<div class ="portfolio-link-line-static">
+					<img src = "Link Line.svg" alt="">
+				</div>
+			</div>
+			<div id= "about_me-link-container" onclick="window.location.href='about_me.html'">  
+				<div class = "about_me-link">about</div>
+				<div class = "about_me-link-line">
+					<img src ="Link Line.svg" alt="">
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- central menu elements -->
+		<div>
+			<div class = "home-nav-projects" onclick="window.location.href='projects.html'">projects</div>
+			<div class="home-menu-projects" onclick="window.location.href='projects.html'">
+				<img src = "Homepage Assets/Projects Icon.svg" alt="">
+			</div>
+			<div class = "home-nav-artworks" onclick="window.location.href='artworks.html'">artworks</div>
+			<div class= "home-menu-artworks" onclick="window.location.href='artworks.html'">
+				<img src = "Homepage Assets/Artworks Icon.svg" alt="home-menu-artworks">
+			</div>
+			<div class = "home-nav-papers" onclick="window.location.href='papers.html'">papers</div>
+			<div class = "home-menu-papers" onclick="window.location.href='papers.html'">
+				<img src ="Homepage Assets/Papers Icon.svg" alt="">
+			</div>
+		</div>
+		
+	</body>
 </html>
