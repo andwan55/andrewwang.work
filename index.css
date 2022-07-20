@@ -115,11 +115,10 @@ button{
 /* homepage */
 .homepage-background{
 	position: absolute;
-	width: calc(1159px * var(--sizing-factor));
-	height: calc(834px * var(--sizing-factor));
+	width: 100%;
+	height: 100%;
 	left: calc(869px * var(--sizing-factor));
 	top: calc(246px * var(--sizing-factor));
-	transform: scale(1.03);
 }
 
 /* about me */
@@ -303,7 +302,7 @@ button{
 	position: absolute;
 	width: calc(105px * var(--sizing-factor));
 	height: calc(5px * var(--sizing-factor));
-	top: calc(50px * var(--sizing-factor));
+	top: calc(65px * var(--sizing-factor));
 	left: calc(-100px * var(--sizing-factor));
 	opacity: 0%;
 	transition: 0.8s;
@@ -312,7 +311,7 @@ button{
 	position: absolute;
 	width: calc(105px * var(--sizing-factor));
 	height: calc(5px * var(--sizing-factor));
-	top: calc(50px * var(--sizing-factor));
+	top: calc(65px * var(--sizing-factor));
 	left: calc(125px * var(--sizing-factor));
 }
 
@@ -333,7 +332,7 @@ button{
 	position: absolute;
 	width: calc(105px * var(--sizing-factor));
 	height: calc(5px * var(--sizing-factor));
-	top: calc(50px * var(--sizing-factor));
+	top: calc(65px * var(--sizing-factor));
 	left: calc(-100px * var(--sizing-factor));
 	opacity: 0%;
 	transition: 0.8s;
@@ -342,7 +341,7 @@ button{
 	position: absolute;
 	width: calc(105px * var(--sizing-factor));
 	height: calc(5px * var(--sizing-factor));
-	top: calc(50px * var(--sizing-factor));
+	top: calc(65px * var(--sizing-factor));
 	left: calc(50px * var(--sizing-factor));
 }
 
@@ -373,12 +372,12 @@ button{
 	width: calc(104px * var(--sizing-factor));
 	height: calc(118px * var(--sizing-factor));
 	left: calc(663px * var(--sizing-factor));
-	top: calc(320px * var(--sizing-factor));
+	top: calc(315px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-projects:hover{
-	top: calc(310px * var(--sizing-factor));
+	top: calc(305px * var(--sizing-factor));
 }
 
 .home-nav-artworks{
@@ -404,13 +403,13 @@ button{
 	width: calc(104px * var(--sizing-factor));
 	height: calc(118px * var(--sizing-factor));
 	left: calc(1015px * var(--sizing-factor));
-	top: calc(305px * var(--sizing-factor));
+	top: calc(300px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 
 .home-menu-artworks:hover{
-	top: calc(295px * var(--sizing-factor));
+	top: calc(290px * var(--sizing-factor));
 }
 
 .home-nav-papers{
@@ -433,15 +432,15 @@ button{
 
 .home-menu-papers{
 	position: absolute;
-	width: calc(50px * var(--sizing-factor));
-	height: calc(68px * var(--sizing-factor));
+	width: calc(60px * var(--sizing-factor));
+	height: calc(82px * var(--sizing-factor));
 	left: calc(1390px * var(--sizing-factor));
-	top: calc(335px * var(--sizing-factor));
+	top: calc(325px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-papers:hover{
-	top: calc(325px * var(--sizing-factor));
+	top: calc(315px * var(--sizing-factor));
 }
 
 /* about me */
@@ -769,24 +768,24 @@ button{
 	width: 80%;
 }
   
-/* Add Animation - Zoom in the Modal */
+/* Add Animation - Dissolve in the Modal */
 .modal-content {
-	animation-name: zoom;
+	animation-name: fade;
 	animation-duration: 0.6s;
 }
 
-@keyframes zoom {
-	from {transform:scale(0)}
-	to {transform:scale(1)}
+@keyframes fade {
+	from {opacity: 0%}
+	to {opacity: 100%}
 }
 
 /* The Close Button */
 .close {
 	position: absolute;
-	top: 15px;
-	right: 35px;
+	top: calc(15px * var(--sizing-factor));
+	right: calc(35px * var(--sizing-factor));
 	color: var(--graphics-color);
-	font-size: 40px;
+	font-size: calc(40px * var(--sizing-factor));
 	font-weight: bold;
 	transition: 0.3s;
 }
