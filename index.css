@@ -294,7 +294,7 @@ button{
 	line-height: calc(65px * var(--sizing-factor));
 	/* identical to box height */
 
-	letter-spacing: 0.08em;
+	letter-spacing: calc(00.08em * var(--sizing-factor));
 
 	color: var(--alt-color);
 }
@@ -361,7 +361,7 @@ button{
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
 
-	letter-spacing: 0.1em;
+	letter-spacing: calc(00.1em * var(--sizing-factor));
 
 	color: var(--base-color);
 	cursor: pointer;
@@ -392,7 +392,7 @@ button{
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
 
-	letter-spacing: 0.1em;
+	letter-spacing: calc(00.1em * var(--sizing-factor));
 
 	color: var(--base-color);
 	cursor: pointer;
@@ -424,7 +424,7 @@ button{
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
 
-	letter-spacing: 0.1em;
+	letter-spacing: calc(00.1em * var(--sizing-factor));
 
 	color: var(--base-color);
 	cursor: pointer;
@@ -545,7 +545,7 @@ button{
 	opacity: 100%;
 }
 
-#paper1-button{ /* current problem is a duplicate instance of paper-button per instance of a button */
+#paper1-button{
 	position: absolute;
 	width: calc(850px * var(--sizing-factor));
 	height: calc(64px * var(--sizing-factor));
@@ -1040,8 +1040,8 @@ button{
 	left: calc(550px * var(--sizing-factor)); /* original is 499px */
 }
 
-/* projects - shift by 460x, 349y */
-#resdec-showcase{ /* same dimensions for all main containers but different xy */
+/* projects */
+#resdec-showcase{
 	position: absolute;
 	width: calc(1277px * var(--sizing-factor));
 	height: calc(374px * var(--sizing-factor));
@@ -1050,7 +1050,7 @@ button{
 }
 .resdec-github-button{
 	position: absolute;
-	background: #DFC39F;
+	background: var(--background-color);
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
 	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
