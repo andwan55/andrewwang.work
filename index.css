@@ -485,10 +485,10 @@ button{
 }
 .resume-button{
 	position: absolute;
-	background: #DFC39F;
+	background: var(--background-color);
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor)) calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -498,6 +498,9 @@ button{
 	letter-spacing: calc(0.05em * var(--sizing-factor));
 	color: var(--base-color);
 	vertical-align: middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 	left: calc(846px * var(--sizing-factor));
 	top: calc(556px * var(--sizing-factor));
@@ -1053,7 +1056,7 @@ button{
 	background: var(--background-color);
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor)) calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
