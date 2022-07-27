@@ -369,15 +369,15 @@ button{
 
 .home-menu-projects{
 	position: absolute;
-	width: calc(104px * var(--sizing-factor));
-	height: calc(118px * var(--sizing-factor));
+	width: calc(94px * var(--sizing-factor));
+	height: calc(106px * var(--sizing-factor));
 	left: calc(663px * var(--sizing-factor));
-	top: calc(315px * var(--sizing-factor));
+	top: calc(310px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-projects:hover{
-	top: calc(305px * var(--sizing-factor));
+	top: calc(300px * var(--sizing-factor));
 }
 
 .home-nav-artworks{
@@ -400,16 +400,16 @@ button{
 
 .home-menu-artworks{
 	position: absolute;
-	width: calc(104px * var(--sizing-factor));
-	height: calc(118px * var(--sizing-factor));
+	width: calc(94px * var(--sizing-factor));
+	height: calc(106px * var(--sizing-factor));
 	left: calc(1015px * var(--sizing-factor));
-	top: calc(300px * var(--sizing-factor));
+	top: calc(295px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 
 .home-menu-artworks:hover{
-	top: calc(290px * var(--sizing-factor));
+	top: calc(285px * var(--sizing-factor));
 }
 
 .home-nav-papers{
@@ -432,15 +432,15 @@ button{
 
 .home-menu-papers{
 	position: absolute;
-	width: calc(60px * var(--sizing-factor));
-	height: calc(82px * var(--sizing-factor));
-	left: calc(1390px * var(--sizing-factor));
-	top: calc(325px * var(--sizing-factor));
+	width: calc(54px * var(--sizing-factor));
+	height: calc(74px * var(--sizing-factor));
+	left: calc(1385px * var(--sizing-factor));
+	top: calc(320px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-papers:hover{
-	top: calc(315px * var(--sizing-factor));
+	top: calc(310px * var(--sizing-factor));
 }
 
 /* about me */
@@ -488,14 +488,13 @@ button{
 	background: var(--background-color);
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	width: calc(103px * var(--sizing-factor));
-	height: calc(33px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
 	font-weight: calc(700 * var(--sizing-factor));
 	font-size: calc(20px * var(--sizing-factor));
-	line-height: 0;
+	line-height: 24px;
 	letter-spacing: calc(0.05em * var(--sizing-factor));
 	color: var(--base-color);
 	
@@ -1053,7 +1052,7 @@ button{
 	background: var(--background-color);
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -1078,7 +1077,7 @@ button{
 	background: #DFC39F;
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -1111,7 +1110,7 @@ button{
 	background: #DFC39F;
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -1144,7 +1143,7 @@ button{
 	background: #DFC39F;
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -1169,7 +1168,7 @@ button{
 	background: #DFC39F;
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
@@ -1201,7 +1200,7 @@ button{
 	background: #DFC39F;
 	border: calc(2px * var(--sizing-factor)) solid var(--base-color);
 	border-radius: calc(5px * var(--sizing-factor));
-	padding: calc(3px * var(--sizing-factor)) calc(12px * var(--sizing-factor));
+	padding: 3px 12px;
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
