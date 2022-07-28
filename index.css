@@ -539,7 +539,7 @@ button{
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-size: 18px;
+	font-size: calc(20px * var(--sizing-factor));
 	line-height: 24px;
 	letter-spacing: calc(0.05em * var(--sizing-factor));
 	color: var(--base-color);
@@ -547,6 +547,8 @@ button{
 	left: calc(846px * var(--sizing-factor));
 	top: calc(566px * var(--sizing-factor));
 	transition: 0.3s;
+	display: inline-flex;
+	align-items: center;
 }
 .resume-button:hover{
 	box-shadow: calc(2px * var(--sizing-factor)) calc(4px * var(--sizing-factor)) calc(4px * var(--sizing-factor)) rgba(0, 0, 0, 0.25);
