@@ -4,6 +4,15 @@
 	font-family: Exensa Grotesk;
 	src: url('ExensaGrotesk-Regular.otf');
 }
+@font-face {
+	font-family: Exensa Grotesk;
+	font-weight: bold;
+	src: url('ExensaGrotesk-Bold.otf');
+}
+@font-face {
+	font-family: TT Norms Pro;
+	src: url('TT Norms Pro Regular.otf');
+}
 :root{
 	--sizing-factor: 1;
 	--background-color: #DFC39F;
@@ -128,6 +137,7 @@ button{
 	height: calc(507px * var(--sizing-factor));
 	left: calc(906px * var(--sizing-factor));
 	top: calc(299px * var(--sizing-factor));
+	opacity: 0.6;
 }
 .about-me-page-node{
 	position: absolute;
@@ -289,7 +299,7 @@ button{
 
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-weight: calc(700 * var(--sizing-factor));
+	font-weight: bold;
 	font-size: calc(54px * var(--sizing-factor));
 	line-height: calc(65px * var(--sizing-factor));
 	/* identical to box height */
@@ -349,14 +359,51 @@ button{
 /* central menu elements ------------------------------------------------------------------- */
 
 /* homepage */
+.homepage-description-title{
+	position: absolute;
+	font-family: 'Exensa Grotesk';
+	font-style: normal;
+	font-weight: bold;
+	font-size: calc(48px * var(--sizing-factor));
+	line-height: calc(58px * var(--sizing-factor));
+	/* identical to box height */
+
+	letter-spacing: calc(00.05em * var(--sizing-factor));
+
+	color: var(--base-color);
+	left: calc(617px * var(--sizing-factor));
+	top: calc(310px * var(--sizing-factor));
+}
+.homepage-description-main{
+	position: absolute;
+	font-family: 'Exensa Grotesk';
+	font-style: normal;
+	font-size: calc(36px * var(--sizing-factor));
+	line-height: calc(43px * var(--sizing-factor));
+	/* identical to box height */
+
+	letter-spacing: calc(00.05em * var(--sizing-factor));
+
+	color: var(--base-color);
+	left: calc(617px * var(--sizing-factor));
+	top: calc(368px * var(--sizing-factor));
+}
+.homepage-menu-separator{
+	position: absolute;
+	width: calc(917px * var(--sizing-factor));
+	height: calc(3px * var(--sizing-factor));
+	left: calc(590px * var(--sizing-factor));
+	top: calc(515px * var(--sizing-factor));
+}
+
 .home-nav-projects{
 	position: absolute;
 	left: calc(617px * var(--sizing-factor));
-	top: calc(403px * var(--sizing-factor));
+	top: calc(665px * var(--sizing-factor));
 
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-weight: calc(700 * var(--sizing-factor));
+	font-weight: bold;
 	font-size: calc(48px * var(--sizing-factor));
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
@@ -372,22 +419,22 @@ button{
 	width: calc(94px * var(--sizing-factor));
 	height: calc(106px * var(--sizing-factor));
 	left: calc(663px * var(--sizing-factor));
-	top: calc(310px * var(--sizing-factor));
+	top: calc(575px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-projects:hover{
-	top: calc(300px * var(--sizing-factor));
+	top: calc(565px * var(--sizing-factor));
 }
 
 .home-nav-artworks{
 	position: absolute;
 	left: calc(960px * var(--sizing-factor));
-	top: calc(403px * var(--sizing-factor));
+	top: calc(665px * var(--sizing-factor));
 
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-weight: calc(700 * var(--sizing-factor));
+	font-weight: bold;
 	font-size: calc(48px * var(--sizing-factor));
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
@@ -403,23 +450,23 @@ button{
 	width: calc(94px * var(--sizing-factor));
 	height: calc(106px * var(--sizing-factor));
 	left: calc(1015px * var(--sizing-factor));
-	top: calc(295px * var(--sizing-factor));
+	top: calc(565px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 
 .home-menu-artworks:hover{
-	top: calc(285px * var(--sizing-factor));
+	top: calc(555px * var(--sizing-factor));
 }
 
 .home-nav-papers{
 	position: absolute;
 	left: calc(1337px * var(--sizing-factor));
-	top: calc(403px * var(--sizing-factor));
+	top: calc(665px * var(--sizing-factor));
 
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-weight: calc(700 * var(--sizing-factor));
+	font-weight: bold;
 	font-size: calc(48px * var(--sizing-factor));
 	line-height: calc(58px * var(--sizing-factor));
 	/* identical to box height */
@@ -435,12 +482,12 @@ button{
 	width: calc(54px * var(--sizing-factor));
 	height: calc(74px * var(--sizing-factor));
 	left: calc(1385px * var(--sizing-factor));
-	top: calc(320px * var(--sizing-factor));
+	top: calc(585px * var(--sizing-factor));
 	transition: 1s;
 	cursor: pointer;
 }
 .home-menu-papers:hover{
-	top: calc(310px * var(--sizing-factor));
+	top: calc(575px * var(--sizing-factor));
 }
 
 /* about me */
@@ -474,12 +521,12 @@ button{
 	width: calc(1000px * var(--sizing-factor));
 	height: calc(250px * var(--sizing-factor));
 
-	font-family: 'Average';
+	font-family: 'TT Norms Pro';
 	font-style: normal;
 	font-weight: calc(400 * var(--sizing-factor));
 	font-size: calc(20px * var(--sizing-factor));
 	line-height: calc(24px * var(--sizing-factor));
-	letter-spacing: calc(0.05em * var(--sizing-factor));
+	letter-spacing: calc(0.08em * var(--sizing-factor));
 
 	color: var(--base-color);
 }
@@ -499,7 +546,7 @@ button{
 	color: var(--base-color);
 	
 	left: calc(846px * var(--sizing-factor));
-	top: calc(556px * var(--sizing-factor));
+	top: calc(566px * var(--sizing-factor));
 	transition: 0.3s;
 }
 .resume-button:hover{
@@ -511,9 +558,9 @@ button{
 /* papers */
 .paper-button-desc{
 	
-	font-family: 'Average';
+	font-family: 'TT Norms Pro';
 	font-style: normal;
-	font-weight: calc(400 * var(--sizing-factor));
+	font-weight: calc(600 * var(--sizing-factor));
 	font-size: calc(16px * var(--sizing-factor));
 	line-height: calc(30px * var(--sizing-factor));
 	letter-spacing: calc(0.02em * var(--sizing-factor));
@@ -546,7 +593,7 @@ button{
 
 #paper1-button{
 	position: absolute;
-	width: calc(850px * var(--sizing-factor));
+	width: calc(895px * var(--sizing-factor));
 	height: calc(64px * var(--sizing-factor));
 	left: calc(460px * var(--sizing-factor));
 	top: calc(349px * var(--sizing-factor));
@@ -567,7 +614,7 @@ button{
 }
 #paper2-button{
 	position: absolute;
-	width: calc(986px * var(--sizing-factor));
+	width: calc(1016px * var(--sizing-factor));
 	height: calc(64px * var(--sizing-factor));
 	left: calc(460px * var(--sizing-factor));
 	top: calc(478px * var(--sizing-factor));
@@ -588,7 +635,7 @@ button{
 }
 #paper3-button{
 	position: absolute;
-	width: calc(919px * var(--sizing-factor));
+	width: calc(939px * var(--sizing-factor));
 	height: calc(64px * var(--sizing-factor));
 	left: calc(460px * var(--sizing-factor));
 	top: calc(607px * var(--sizing-factor));
@@ -651,7 +698,7 @@ button{
 }
 #paper6-button{
 	position: absolute;
-	width: calc(929px * var(--sizing-factor));
+	width: calc(939px * var(--sizing-factor));
 	height: calc(64px * var(--sizing-factor));
 	left: calc(460px * var(--sizing-factor));
 	top: calc(994px * var(--sizing-factor));
