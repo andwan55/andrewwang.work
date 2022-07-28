@@ -137,7 +137,7 @@ button{
 	height: calc(507px * var(--sizing-factor));
 	left: calc(906px * var(--sizing-factor));
 	top: calc(299px * var(--sizing-factor));
-	opacity: 0.6;
+	opacity: 0.7;
 }
 .about-me-page-node{
 	position: absolute;
@@ -539,8 +539,7 @@ button{
 	text-align: center;
 	font-family: 'Exensa Grotesk';
 	font-style: normal;
-	font-weight: calc(700 * var(--sizing-factor));
-	font-size: calc(20px * var(--sizing-factor));
+	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: calc(0.05em * var(--sizing-factor));
 	color: var(--base-color);
