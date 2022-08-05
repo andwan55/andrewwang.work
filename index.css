@@ -153,7 +153,7 @@ button{
 	width: calc(1043.25px * var(--sizing-factor));
 	height: calc(186px * var(--sizing-factor));
 	left: calc(555px * var(--sizing-factor));
-	top: calc(572px * var(--sizing-factor));
+	top: calc(672px * var(--sizing-factor));
 }
 .page-node{
 	position: absolute;
@@ -169,7 +169,7 @@ button{
 	width: calc(1380px * var(--sizing-factor));
 	height: calc(186px * var(--sizing-factor));
 	left: calc(555px * var(--sizing-factor));
-	top: calc(572px * var(--sizing-factor));
+	top: calc(672px * var(--sizing-factor));
 }
 .close-icon{
 	position: absolute;
@@ -186,7 +186,7 @@ button{
 	width: calc(1321px * var(--sizing-factor));
 	height: calc(186px * var(--sizing-factor));
 	left: calc(555px * var(--sizing-factor));
-	top: calc(572px * var(--sizing-factor));
+	top: calc(672px * var(--sizing-factor));
 }
 
 /* logo elements ------------------------------------------------------------------- */
