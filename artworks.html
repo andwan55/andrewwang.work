@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="index.css">
+		<link rel="icon" type="image/x-icon" href="Favicon.svg">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -26,20 +27,19 @@
 
 			<!-- logo elements -->
 			<div id="logo-container" onclick="window.location.href='index.html'">
-				<div class="logo-graphics">
-					<img src = "Logo Graphics.svg" alt="">
-				</div>
 				<div class = "logo-bkgd">
-					<img src="Logo Background 2.svg" alt="">
+					<img src="Logo_Background_V2.svg" alt="">
 				</div>
 				<div class = "logo">
-					<img src="portfolio_site_logo_v3.svg" alt="">
+					<img src="Portfolio_Logo.svg" alt="">
+				</div>
+				<div class="logo-graphics">
+					<img src = "Logo Graphics.svg" alt="">
 				</div>
 			</div>
 
 			<!-- top menu bar elements -->
-			<div>
-				<img class="top-menu-graphics" src = "Top Menu Graphics.svg" alt="">
+			<div class="top-menu-bkgd">
 				<div id="github-icon-container" onClick="window.open('https://github.com/andwan55','_blank')">
 					<img class="github-icon2" src = "Github Icon 2.svg" alt="">
 					<img class="github-icon1" src = "Github Icon 1.svg" alt="">
@@ -51,13 +51,21 @@
 			</div>
 
 			<!-- left menu elements -->
-			<div>
+			<div id="left-menu-container">
 				<div id = "portfolio-link-container">
 					<div class = "portfolio-link" onclick="window.location.href='index.html'">portfolio</div>
 					<img class="portfolio-link-line" src = "Link Line.svg" alt="">
+					<div class = "portfolio-menu-button" src = "Portfolio Menu Button.svg" alt=""></div>
+					<div class = "portfolio-menu-container">
+						<div class = "portfolio-hover-menu">
+							<div class = "portfolio-menu-text" onclick="window.location.href='projects.html'">projects</div>
+							<div class = "portfolio-menu-text" onclick="window.location.href='artworks.html'">artworks</div>
+							<div class = "portfolio-menu-text" onclick="window.location.href='papers.html'">papers</div>
+						</div>
+					</div>
 				</div>
-				<div id= "about_me-link-container" onclick="window.location.href='about_me.html'">  
-					<div class = "about_me-link">about</div>
+				<div id= "about_me-link-container">  
+					<div class = "about_me-link" onclick="window.location.href='about_me.html'">about</div>
 					<img class="about_me-link-line" src ="Link Line.svg" alt="">
 				</div>
 			</div>
@@ -69,28 +77,35 @@
 				<span class="close">&times;</span>
 				<img class="modal-content" id="img">
 			</div>
-			<img class="traditional-artworks-title" src="Artworks Assets/Traditional Artworks Title.svg" alt="">
-			<!-- in rough order of top to bottom -->
-			<img id="artwork0001" src="Artworks Assets/0001.svg" alt="" onclick="popup('artwork0001')">
-			<img id="artwork0007" src="Artworks Assets/0007.svg" alt="" onclick="popup('artwork0007')">
-			<img id="artwork0006" src="Artworks Assets/0006.svg" alt="" onclick="popup('artwork0006')">
-			<img id="artwork0002" src="Artworks Assets/0002.svg" alt="" onclick="popup('artwork0002')">
-			<img id="artwork0004" src="Artworks Assets/0004.svg" alt="" onclick="popup('artwork0004')">
-			<img id="artwork0005" src="Artworks Assets/0005.svg" alt="" onclick="popup('artwork0005')">
-			<img id="artwork0003" src="Artworks Assets/0003.svg" alt="" onclick="popup('artwork0003')">
-			<img id="artwork0008" src="Artworks Assets/0008.svg" alt="" onclick="popup('artwork0008')">
-			<img id="artwork0009" src="Artworks Assets/0009.svg" alt="" onclick="popup('artwork0009')">
-			<img id="artwork0010" src="Artworks Assets/0010.svg" alt="" onclick="popup('artwork0010')">
-			<img id="artwork0011" src="Artworks Assets/0011.svg" alt="" onclick="popup('artwork0011')">
-			<img id="artwork0012" src="Artworks Assets/0012.svg" alt="" onclick="popup('artwork0012')">
-			<img id="artwork0013" src="Artworks Assets/0013.svg" alt="" onclick="popup('artwork0013')">
-			<img class="separator-graphic" src="Artworks Assets/Separator Graphic.svg" alt="">
-			
-			<img class="digital-artworks-title" src="Artworks Assets/Digital Artworks Title.svg" alt="">
-			<img id="artwork-poster" src="Artworks Assets/Diya Campaign Poster.svg" alt="" onclick="popup('artwork-poster')">
-			<img id="artwork0016" src="Artworks Assets/0016.svg" alt="" onclick="popup('artwork0016')">
-			<img id="artwork0014" src="Artworks Assets/0014.svg" alt="" onclick="popup('artwork0014')">
-			<img id="artwork0015" src="Artworks Assets/0015.svg" alt="" onclick="popup('artwork0015')">
-			<img class="artworks-footer" src = "Page Footer.svg" alt="">
+			<div id = "central-container">
+				<div class = "artwork-element-container">
+					<img src="Artworks Assets/Traditional Artworks Title.svg" alt="">
+				</div>
+				<img class ="artwork" src="Artworks Assets/0001.svg" alt="" onclick="popup('Artworks Assets/0001.svg')">
+				<img class ="artwork" src="Artworks Assets/0007.svg" alt="" onclick="popup('Artworks Assets/0007.svg')">
+				<img class ="artwork" src="Artworks Assets/0006.svg" alt="" onclick="popup('Artworks Assets/0006.svg')">
+				<img class ="artwork" src="Artworks Assets/0002.svg" alt="" onclick="popup('Artworks Assets/0002.svg')">
+				<img class ="artwork" src="Artworks Assets/0004.svg" alt="" onclick="popup('Artworks Assets/0004.svg')">
+				<img class ="artwork" src="Artworks Assets/0005.svg" alt="" onclick="popup('Artworks Assets/0005.svg')">
+				<img class ="artwork" src="Artworks Assets/0003.svg" alt="" onclick="popup('Artworks Assets/0003.svg')">
+				<img class ="artwork" src="Artworks Assets/0008.svg" alt="" onclick="popup('Artworks Assets/0008.svg')">
+				<img class ="artwork" src="Artworks Assets/0009.svg" alt="" onclick="popup('Artworks Assets/0009.svg')">
+				<img class ="artwork" src="Artworks Assets/0010.svg" alt="" onclick="popup('Artworks Assets/0010.svg')">
+				<img class ="artwork" src="Artworks Assets/0011.svg" alt="" onclick="popup('Artworks Assets/0011.svg')">
+				<img class ="artwork" src="Artworks Assets/0012.svg" alt="" onclick="popup('Artworks Assets/0012.svg')">
+				<img class ="artwork" src="Artworks Assets/0013.svg" alt="" onclick="popup('Artworks Assets/0013.svg')">
+				
+				<div class = "artwork-element-container">
+					<img src="Artworks Assets/Digital Artworks Title.svg" alt="">
+				</div>
+				<img class ="artwork" src="Artworks Assets/Shreya Banner Graphic.svg" alt="" 
+				onclick="popup('Artworks Assets/Shreya Banner Graphic.svg')">
+				<img class ="artwork" src="Artworks Assets/0014.svg" alt="" onclick="popup('Artworks Assets/0014.svg')">
+				<img class ="artwork" src="Artworks Assets/Diya Campaign Poster.svg" alt="" 
+				onclick="popup('Artworks Assets/Diya Campaign Poster.svg')">
+				<img class ="artwork" src="Artworks Assets/0015.svg" alt="" onclick="popup('Artworks Assets/0015.svg')">
+				<img class ="artwork" src="Artworks Assets/0016.svg" alt="" onclick="popup('Artworks Assets/0016.svg')">
+				<img class="footer" src = "Page Footer.svg" alt="">
+			</div>
 	</body>
 </html>

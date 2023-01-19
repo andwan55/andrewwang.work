@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="index.css">
+		<link rel="icon" type="image/x-icon" href="Favicon.svg">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -18,20 +19,19 @@
 		
 		<!-- logo elements -->
 		<div id="logo-container" onclick="window.location.href='index.html'">
-			<div class="logo-graphics">
-				<img src = "Logo Graphics.svg" alt="">
-			</div>
 			<div class = "logo-bkgd">
-				<img src="Logo Background 2.svg" alt="">
+				<img src="Logo_Background_V2.svg" alt="">
 			</div>
 			<div class = "logo">
-				<img src="portfolio_site_logo_v3.svg" alt="">
+				<img src="Portfolio_Logo.svg" alt="">
+			</div>
+			<div class="logo-graphics">
+				<img src = "Logo Graphics.svg" alt="">
 			</div>
 		</div>
 		
 		<!-- top menu bar elements -->
-		<div>
-			<img class="top-menu-graphics" src = "Top Menu Graphics.svg" alt="">
+		<div class="top-menu-bkgd">
 			<div id="github-icon-container" onClick="window.open('https://github.com/andwan55','_blank')">
 				<img class="github-icon2" src = "Github Icon 2.svg" alt="">
 				<img class="github-icon1" src = "Github Icon 1.svg" alt="">
@@ -40,16 +40,24 @@
 				<img class="linkedin-icon2" src = "Linkedin Icon 2.svg" alt="">
 				<img class="linkedin-icon1" src = "Linkedin Icon 1.svg" alt="">
 			</div>
-		</div>
+		</div>	
 		
 		<!-- left menu elements -->
-		<div>
-			<div id = "portfolio-link-container" onclick="window.location.href='index.html'">
-				<div class = "portfolio-link">portfolio</div>
+		<div id="left-menu-container">
+			<div id = "portfolio-link-container">
+				<div class = "portfolio-link" onclick="window.location.href='index.html'">portfolio</div>
 				<img class="portfolio-link-line-static" src = "Link Line.svg" alt="">
+				<div class = "portfolio-menu-button" src = "Portfolio Menu Button.svg" alt=""></div>
+				<div class = "portfolio-menu-container">
+					<div class = "portfolio-hover-menu">
+						<div class = "portfolio-menu-text" onclick="window.location.href='projects.html'">projects</div>
+						<div class = "portfolio-menu-text" onclick="window.location.href='artworks.html'">artworks</div>
+						<div class = "portfolio-menu-text" onclick="window.location.href='papers.html'">papers</div>
+					</div>
+				</div>
 			</div>
-			<div id= "about_me-link-container" onclick="window.location.href='about_me.html'">  
-				<div class = "about_me-link">about</div>
+			<div id= "about_me-link-container">  
+				<div class = "about_me-link" onclick="window.location.href='about_me.html'">about</div>
 				<img class="about_me-link-line" src ="Link Line.svg" alt="">
 			</div>
 		</div>
@@ -59,12 +67,16 @@
 			<div class = "homepage-description-title">Hi! I'm Andrew Wang.</div>
 			<div class = "homepage-description-main">A university student aspiring to be a UI/UX designer,<br>and this is what I’ve been working on:</div>
 			<img class = "homepage-menu-separator" src = "Homepage Assets/Homepage Menu Separator.svg" alt="">
-			<div class = "home-nav-projects" onclick="window.location.href='projects.html'">projects</div>
-			<img class="home-menu-projects" src = "Homepage Assets/Projects Icon.svg" alt="" onclick="window.location.href='projects.html'">
-			<div class = "home-nav-artworks" onclick="window.location.href='artworks.html'">artworks</div>
-			<img class="home-menu-artworks" src = "Homepage Assets/Artworks Icon.svg" alt="" onclick="window.location.href='artworks.html'">
-			<div class = "home-nav-papers" onclick="window.location.href='papers.html'">papers</div>
-			<img class="home-menu-papers" src ="Homepage Assets/Papers Icon.svg" alt="" onclick="window.location.href='papers.html'">
+			<div class = "home-menu-container">
+				<img class="home-menu-projects" src = "Homepage Assets/Projects Icon.svg" alt="" onclick="window.location.href='projects.html'">
+				<img class="home-menu-artworks" src = "Homepage Assets/Artworks Icon.svg" alt="" onclick="window.location.href='artworks.html'">
+				<img class="home-menu-papers" src ="Homepage Assets/Papers Icon.svg" alt="" onclick="window.location.href='papers.html'">
+			</div>
+			<div class = "home-nav-container">
+				<div class = "home-nav-projects" onclick="window.location.href='projects.html'">projects</div>
+				<div class = "home-nav-artworks" onclick="window.location.href='artworks.html'">artworks</div>
+				<div class = "home-nav-papers" onclick="window.location.href='papers.html'">papers</div>
+			</div>
 		</div>
 	</body>
 </html>

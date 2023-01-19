@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="index.css">
+		<link rel="icon" type="image/x-icon" href="Favicon.svg">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -22,20 +23,19 @@
 
 			<!-- logo elements -->
 			<div id="logo-container" onclick="window.location.href='index.html'">
-				<div class="logo-graphics">
-					<img src = "Logo Graphics.svg" alt="">
-				</div>
 				<div class = "logo-bkgd">
-					<img src="Logo Background 2.svg" alt="">
+					<img src="Logo_Background_V2.svg" alt="">
 				</div>
 				<div class = "logo">
-					<img src="portfolio_site_logo_v3.svg" alt="">
+					<img src="Portfolio_Logo.svg" alt="">
+				</div>
+				<div class="logo-graphics">
+					<img src = "Logo Graphics.svg" alt="">
 				</div>
 			</div>
 
 			<!-- top menu bar elements -->
-			<div>
-				<img class="top-menu-graphics" src = "Top Menu Graphics.svg" alt="">
+			<div class="top-menu-bkgd">
 				<div id="github-icon-container" onClick="window.open('https://github.com/andwan55','_blank')">
 					<img class="github-icon2" src = "Github Icon 2.svg" alt="">
 					<img class="github-icon1" src = "Github Icon 1.svg" alt="">
@@ -47,34 +47,103 @@
 			</div>
 
 			<!-- left menu elements -->
-			<div>
+			<div id="left-menu-container">
 				<div id = "portfolio-link-container">
 					<div class = "portfolio-link" onclick="window.location.href='index.html'">portfolio</div>
 					<img class="portfolio-link-line" src = "Link Line.svg" alt="">
+					<div class = "portfolio-menu-button" src = "Portfolio Menu Button.svg" alt=""></div>
+					<div class = "portfolio-menu-container">
+						<div class = "portfolio-hover-menu">
+							<div class = "portfolio-menu-text" onclick="window.location.href='projects.html'">projects</div>
+							<div class = "portfolio-menu-text" onclick="window.location.href='artworks.html'">artworks</div>
+							<div class = "portfolio-menu-text" onclick="window.location.href='papers.html'">papers</div>
+						</div>
+					</div>
 				</div>
-				<div id= "about_me-link-container" onclick="window.location.href='about_me.html'">  
-					<div class = "about_me-link">about</div>
+				<div id= "about_me-link-container">  
+					<div class = "about_me-link" onclick="window.location.href='about_me.html'">about</div>
 					<img class="about_me-link-line" src ="Link Line.svg" alt="">
 				</div>
 			</div>
 
 
 			<!-- central elements -->
-			
-			<img id="resdec-showcase" src="Projects Assets/ResDec Showcase.svg" alt="">
-			<button class="resdec-github-button" onclick=" window.open('https://github.com/andwan55/resdetection','_blank')">GITHUB</button>
-			<button class="resdec-figma-button" onclick=" window.open('https://www.figma.com/file/4AXOBsZcf9jUU9AAwzGbyb/Respiratory-Condition-Detection-App-Concept?node-id=0%3A1','_blank')">FIGMA</button>
-
-			<img id="gesturerec-showcase" src="Projects Assets/Gesture Rec Showcase.svg" alt="">
-			<button class="gesturerec-github-button" onclick=" window.open('https://github.com/KostadinDev/deep-gestures','_blank')">GITHUB</button>
-
-			<img id="toy-showcase" src="Projects Assets/Toy Showcase.svg" alt="">
-			<button class="toy-github-button" onclick=" window.open('https://github.com/andwan55/Musical-Santa-Toy','_blank')">GITHUB</button>
-			<button class="toy-youtube-button" onclick=" window.open('https://www.youtube.com/watch?v=PjTPti3LElY','_blank')">YOUTUBE</button>
-
-			<img id="excel-showcase" src="Projects Assets/Excel Showcase.svg" alt="">
-			<button class="excel-github-button" onclick=" window.open('https://github.com/andwan55/Decision-Support-System-DSS-Restaurant-Finance-Optimization-Program','_blank')">GITHUB</button>
-
-			<img class="projects-footer" src = "Page Footer.svg" alt="">
+			<div id = "central-container">
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/Cookbook Thumbnail.svg" alt="">
+						<img class = "project-title" src = "Projects Assets/Cookbook App Title Frame.svg" alt="">
+						<div class = "project-desc">A simple app concept created in Figma directed at cooks from any background to organize recipes
+							and their ingredients, along with the capability to share them with friends
+						</div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick=" window.open('Papers Assets/EST441 Final Project Paper.pdf','_blank')">REPORT</button>
+							<button class = "project-button" onclick=" window.open('https://www.figma.com/file/1UMPZ3lImlmMyI2fCLgrNJ/EST441-App-Project?node-id=0%3A1&t=oC6U3Abm1UqZJr1E-1','_blank')">FIGMA</button>
+						</div>
+					</div>
+				</div>
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/Success Koach Thumbnail.png" alt="">
+						<img class = "project-title" src = "Projects Assets/Success Koach Title Frame.svg" alt="">
+						<div class = "project-desc">Designed website template on the Kajabi platform, created a new logo 
+							and composed website infographics on Figma<br><em>click to see more below!</em></div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick="">MORE</button>
+							<button class = "project-button" onclick=" window.open('https://successkoach.com','_blank')">WEBSITE</button>
+							<button class = "project-button" onclick=" window.open('https://www.figma.com/file/wpbwMV09mnByOW0RjPeH9s/Success-Koach-Site-Files?node-id=0%3A1&t=LMfumOJQ4qA7ZtOz-1','_blank')">FIGMA</button>
+						</div>
+					</div>
+				</div>
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/ResDec_Thumbnail.svg" alt="">
+						<img class = "project-title" src = "Projects Assets/ResDec Title Frame.svg" alt="">
+						<div class = "project-desc">An app concept to allow users to check chest X-rays to see if they have 
+							COVID19, pneumonia, or tuberculosis; consists of two parts: an app layout 
+							in Figma + a machine learning model in a Jupyter notebook</div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick=" window.open('https://github.com/andwan55/resdetection','_blank')">GITHUB</button>
+							<button class = "project-button" onclick=" window.open('https://www.figma.com/file/4AXOBsZcf9jUU9AAwzGbyb/Respiratory-Condition-Detection-App-Concept?node-id=0%3A1','_blank')">FIGMA</button>
+						</div>
+					</div>
+				</div>
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/Gesture Rec Thumbnail.svg" alt="">
+						<img class = "project-title" src = "Projects Assets/Gesture Rec Title Frame.svg" alt="">
+						<div class = "project-desc">Worked on an Arduino gesture recognition device to pinpoint user
+							motions through a machine learning model</div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick=" window.open('https://github.com/KostadinDev/deep-gestures','_blank')">GITHUB</button>
+						</div>
+					</div>
+				</div>
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/Toy Thumbnail.svg" alt="">
+						<img class = "project-title" src = "Projects Assets/Toy Title Frame.svg" alt="">
+						<div class = "project-desc">Helped design and build a toy Santa drummer and coded an Arduino Uno; 
+							used the Minim libraries within the Processing IDE to read the MP3 file’s 
+							data and matched its movements and lights to the beat of the song</div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick=" window.open('https://github.com/andwan55/Musical-Santa-Toy','_blank')">GITHUB</button>
+							<button class = "project-button" onclick=" window.open('https://www.youtube.com/watch?v=PjTPti3LElY','_blank')">YOUTUBE</button>
+						</div>
+					</div>
+				</div>
+				<div class = "project-frame">
+					<div class = "project-container">
+						<img class = "project-thumbnail" src = "Projects Assets/Excel Thumbnail.svg" alt="">
+						<img class = "project-title" src = "Projects Assets/Excel Title Frame.svg" alt="">
+						<div class = "project-desc">VBA program for a hypothetical case of a restaurant manager seeking to 
+							optimize finances for employee salaries and orders</div>
+						<div class = "project-button-container">
+							<button class = "project-button" onclick=" window.open('https://github.com/andwan55/Decision-Support-System-DSS-Restaurant-Finance-Optimization-Program','_blank')">GITHUB</button>
+						</div>
+					</div>
+				</div>
+				<img class="footer" src = "Page Footer.svg" alt="">
+			</div>
 	</body>
 </html>
