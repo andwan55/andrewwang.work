@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+		<link rel="icon" type="image/x-icon" href="Favicon.svg">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>About Me</title>
+	</head>
+	
+	<body>
+		<script src = "main.js"></script>
+		
+		<!-- page background elements -->
+		<div>
+			<img class="about_me-background" src = "About Me Assets/Cloud Background.svg" alt="">
+			<img class="page-menu-graphic" src = "Page Menu Graphic.svg" alt="">
+			<img class="page-node" src = "About Me Assets/About Me Page Node.svg" alt="">
+		</div>
+		
+		<!-- logo elements -->
+		<div id="logo-container" onclick="window.location.href='index.html'">
+			<div class = "logo-bkgd">
+				<img src="Logo_Background_V2.svg" alt="">
+			</div>
+			<div class = "logo">
+				<img src="Portfolio_Logo.svg" alt="">
+			</div>
+			<div class="logo-graphics">
+				<img src = "Logo Graphics.svg" alt="">
+			</div>
+		</div>
+		
+		<!-- top menu bar elements -->
+		<div class="top-menu-bkgd">
+			<div id="github-icon-container" onClick="window.open('https://github.com/andwan55','_blank')">
+				<img class="github-icon2" src = "Github Icon 2.svg" alt="">
+				<img class="github-icon1" src = "Github Icon 1.svg" alt="">
+			</div>
+			<div id="linkedin-icon-container" onClick="window.open('https://www.linkedin.com/in/andwan55/','_blank')">
+				<img class="linkedin-icon2" src = "Linkedin Icon 2.svg" alt="">
+				<img class="linkedin-icon1" src = "Linkedin Icon 1.svg" alt="">
+			</div>
+		</div>
+		
+		<!-- left menu elements -->
+		<div id="left-menu-container">
+			<div id = "portfolio-link-container">
+				<div class = "portfolio-link" onclick="window.location.href='index.html'">portfolio</div>
+				<img class="portfolio-link-line" src = "Link Line.svg" alt="">
+				<div class = "portfolio-menu-button" src = "Portfolio Menu Button.svg" alt=""></div>
+				<div class = "portfolio-menu-container">
+					<div class = "portfolio-hover-menu">
+						<div class = "portfolio-menu-text" onclick="window.location.href='projects.html'">projects</div>
+						<div class = "portfolio-menu-text" onclick="window.location.href='artworks.html'">artworks</div>
+						<div class = "portfolio-menu-text" onclick="window.location.href='papers.html'">papers</div>
+					</div>
+				</div>
+			</div>
+			<div id= "about_me-link-container">  
+				<div class = "about_me-link" onclick="window.location.href='about_me.html'">about</div>
+				<img class="about_me-link-line-static" src ="Link Line.svg" alt="">
+			</div>
+		</div>
+		
+		
+		<!-- central elements -->
+		<div>
+			<div id = "alt-central-container">
+				<div id="profile-pic-container">
+					<img class="profile-pic" src="About Me Assets/Profile Picture.svg" alt="">
+					<img class ="profile-pic-graphic" src = "About Me Assets/Profile Pic Graphic.svg" alt="">
+				</div>
+				<div id="about-box">Hi there, my name is Andrew Wang! I’m an undergraduate student at SUNY Stony 
+					Brook University majoring in Technological Systems Management with a specialization in Computer Science.
+					<br><br>I grew up in Fremont, California and have a passion for several applications in art, including 
+					game, graphic, and product design. Much of my experience has to do with computer science-related projects 
+					as well since I took several courses on them in university. For a more detailed list of my skills, see 
+					my resume below.<br><br>
+					<div class="project-button" onclick=" window.open('About Me Assets/Resume.pdf','_blank')">RESUME</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
