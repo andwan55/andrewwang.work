@@ -611,7 +611,7 @@ button{
 	transition: 0.3s;
 }
 .paper-button{
-	width: calc(width * var(--sizing-factor));
+	width: 75%;
 	height: calc(64px * var(--sizing-factor));
 
 	font-family: 'Exensa Grotesk';
