@@ -128,7 +128,7 @@ button{
 }
 #central-container{
 	position: absolute;
-	width: calc(1500px * var(--sizing-factor));
+	width: calc(1475px * var(--sizing-factor));
 	left: 25vw;
 	top: 34vh;
 }
@@ -141,6 +141,76 @@ button{
 
 	display: flex;
 	justify-content: space-between;
+}
+
+/* slideshow code */
+.slideshow-container{
+	position: relative;
+	max-width: calc(900px * var(--sizing-factor));
+	max-height: calc(600px * var(--sizing-factor));
+	margin: 0 auto;
+	margin-bottom: calc(60px * var(--sizing-factor));
+}
+.slideshow-caption{
+	width: fit-content;
+	margin-top: calc(-20px * var(--sizing-factor));
+	margin-bottom: calc(60px * var(--sizing-factor));
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: calc(15px * var(--sizing-factor)) calc(25px * var(--sizing-factor));
+	text-align: center;
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: calc(400 * var(--sizing-factor));
+	font-size: calc(20px * var(--sizing-factor));
+	line-height: calc(24px * var(--sizing-factor));
+	letter-spacing: calc(0.08em * var(--sizing-factor));
+	color: #FFFFFF;
+	vertical-align: middle;
+
+	background: var(--base-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: calc(10px * var(--sizing-factor));
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: calc(-22px * var(--sizing-factor));
+	padding: calc(16px * var(--sizing-factor));
+	color: white;
+	background-color: var(--base-color);
+	font-weight: bold;
+	font-size: calc(18px * var(--sizing-factor));
+	transition: 0.6s ease;
+	border-radius: 0 calc(3px * var(--sizing-factor)) calc(3px * var(--sizing-factor)) 0;
+	user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: calc(3px * var(--sizing-factor)) 0 0 calc(3px * var(--sizing-factor));
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+  
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
 }
 
 /* homepage */
@@ -742,244 +812,6 @@ button{
 	left: 50%;
 }
 
-/* OLD ARTWORK CODE, DELETE WHEN DONE TRANSFERRING */
-
-#artwork0001{
-	position: absolute;
-	width: calc(896px * var(--sizing-factor));
-	height: calc(591px * var(--sizing-factor));
-	top: calc(442px * var(--sizing-factor));
-	left: calc(492px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0001:hover {
-	opacity: 0.7;
-}
-
-#artwork0007 {
-	position: absolute;
-	width: calc(433px * var(--sizing-factor));
-	height: calc(285px * var(--sizing-factor));
-	top: calc(442px * var(--sizing-factor));
-	left: calc(1408px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0007:hover {
-	opacity: 0.7;
-}
-
-#artwork0006 {
-	position: absolute;
-	width: calc(432px * var(--sizing-factor));
-	height: calc(285px * var(--sizing-factor));
-	top: calc(748px * var(--sizing-factor));
-	left: calc(1408px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0006:hover {
-	opacity: 0.7;
-}
-
-#artwork0002 {
-	position: absolute;
-	width: calc(436px * var(--sizing-factor));
-	height: calc(285px * var(--sizing-factor));
-	top: calc(1066px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0002:hover {
-	opacity: 0.7;
-}
-
-#artwork0004 {
-	position: absolute;
-	width: calc(865px * var(--sizing-factor));
-	height: calc(601px * var(--sizing-factor));
-	top: calc(1066px * var(--sizing-factor));
-	left: calc(976px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0004:hover {
-	opacity: 0.7;
-}
-
-#artwork0005 {
-	position: absolute;
-	width: calc(437px * var(--sizing-factor));
-	height: calc(285px * var(--sizing-factor));
-	top: calc(1382px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0005:hover {
-	opacity: 0.7;
-}
-
-#artwork0003 {
-	position: absolute;
-	width: calc(734px * var(--sizing-factor));
-	height: calc(470px * var(--sizing-factor));
-	top: calc(1698px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0003:hover {
-	opacity: 0.7;
-}
-
-#artwork0008 {
-	position: absolute;
-	width: calc(567px * var(--sizing-factor));
-	height: calc(470px * var(--sizing-factor));
-	top: calc(1698px * var(--sizing-factor));
-	left: calc(1274px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0008:hover {
-	opacity: 0.7;
-}
-
-#artwork0009 {
-	position: absolute;
-	width: calc(384px * var(--sizing-factor));
-	height: calc(254px * var(--sizing-factor));
-	top: calc(2199px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0009:hover {
-	opacity: 0.7;
-}
-
-#artwork0010 {
-	position: absolute;
-	width: calc(386px * var(--sizing-factor));
-	height: calc(255px * var(--sizing-factor));
-	top: calc(2199px * var(--sizing-factor));
-	left: calc(908px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0010:hover {
-	opacity: 0.7;
-}
-
-#artwork0011 {
-	position: absolute;
-	width: calc(514px * var(--sizing-factor));
-	height: calc(700px * var(--sizing-factor));
-	top: calc(2199px * var(--sizing-factor));
-	left: calc(1327px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0011:hover {
-	opacity: 0.7;
-}
-
-#artwork0012 {
-	position: absolute;
-	width: calc(386px * var(--sizing-factor));
-	height: calc(255px * var(--sizing-factor));
-	top: calc(2485px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0012:hover {
-	opacity: 0.7;
-}
-
-#artwork0013 {
-	position: absolute;
-	width: calc(386px * var(--sizing-factor));
-	height: calc(255px * var(--sizing-factor));
-	top: calc(2485px * var(--sizing-factor));
-	left: calc(908px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0013:hover {
-	opacity: 0.7;
-}
-
-.digital-artworks-title{
-	position: absolute;
-	width: calc(162px * var(--sizing-factor));
-	height: calc(26px * var(--sizing-factor));
-	top: calc(2999px * var(--sizing-factor));
-	left: calc(1073px * var(--sizing-factor));
-}
-
-#artwork-poster {
-	position: absolute;
-	width: calc(549px * var(--sizing-factor));
-	height: calc(646px * var(--sizing-factor));
-	top: calc(3072px * var(--sizing-factor));
-	left: calc(491px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork-poster:hover {
-	opacity: 0.7;
-}
-
-#artwork0016 {
-	position: absolute;
-	width: calc(279px * var(--sizing-factor));
-	height: calc(379px * var(--sizing-factor));
-	top: calc(3072px * var(--sizing-factor));
-	left: calc(1097px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0016:hover {
-	opacity: 0.7;
-}
-
-#artwork0014 {
-	position: absolute;
-	width: calc(410px * var(--sizing-factor));
-	height: calc(557px * var(--sizing-factor));
-	top: calc(3072px * var(--sizing-factor));
-	left: calc(1432px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0014:hover {
-	opacity: 0.7;
-}
-
-#artwork0015 {
-	position: absolute;
-	width: calc(279px * var(--sizing-factor));
-	height: calc(379px * var(--sizing-factor));
-	top: calc(3482px * var(--sizing-factor));
-	left: calc(1097px * var(--sizing-factor));
-	cursor: pointer;
-	transition: 0.3s;
-}
-#artwork0015:hover {
-	opacity: 0.7;
-}
-.artworks-footer{
-	position: absolute;
-	width: calc(1411px * var(--sizing-factor));
-	height: calc(87px * var(--sizing-factor));
-	top: calc(3960px * var(--sizing-factor));
-	left: calc(550px * var(--sizing-factor)); /* original is 499px */
-}
-
 /* projects */
 .project-frame{
 	width: calc(1277px * var(--sizing-factor));
@@ -1010,21 +842,20 @@ button{
 .project-container:hover{
 	transform: translateY(calc(-5px * var(--sizing-factor)));
 }
-.project-title{
-	position: absolute;
-	width: calc(width * var(--sizing-factor));
-	height: calc(68px * var(--sizing-factor));	
-	right: 0%;
-}
-/*.project-container:hover .project-subtitle{
-	opacity: 50%;
-}*/
 .project-container:hover .project-desc{
 	opacity: 100%;
 }
 .project-container:hover .project-button-container{
 	opacity: 100%;
 }
+
+.project-title{
+	position: absolute;
+	width: calc(width * var(--sizing-factor));
+	height: calc(68px * var(--sizing-factor));	
+	right: 0%;
+}
+
 .project-desc{
 	position: absolute;
 	max-width: calc(843px * var(--sizing-factor));
@@ -1089,6 +920,59 @@ button{
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+.project-name{
+	width: fit-content;
+	margin-bottom: calc(60px * var(--sizing-factor));
+
+	padding: calc(25px * var(--sizing-factor)) calc(35px * var(--sizing-factor));
+	text-align: center;
+	font-family: 'Exensa Grotesk';
+	font-style: normal;
+	font-weight: calc(700 * var(--sizing-factor));
+	font-size: calc(40px * var(--sizing-factor));
+	letter-spacing: calc(0.08em * var(--sizing-factor));
+	color: #FFFFFF;
+	vertical-align: middle;
+
+	background: var(--base-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 	calc(20px * var(--sizing-factor));
+}
+
+.project-box{
+	width: fit-content;
+	max-width: calc(1200px * var(--sizing-factor));
+	margin: 0 auto;
+	margin-bottom: calc(60px * var(--sizing-factor));
+
+	padding: calc(40px * var(--sizing-factor));
+	background: var(--base-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 	calc(30px * var(--sizing-factor));
+	
+	font-family: 'TT Norms Pro';
+	font-style: normal;
+	font-weight: calc(400 * var(--sizing-factor));
+	font-size: calc(20px * var(--sizing-factor));
+	line-height: calc(24px * var(--sizing-factor));
+	letter-spacing: calc(0.08em * var(--sizing-factor));
+
+	color: #FFFFFF;
+}
+
+.skSite-slides, .skHome-slides, .skAbout-slides, .skService-slides, .skGraphics-slides {
+	max-width: inherit;
+	max-height: inherit;
+	padding: 0;
+	display: none;
+	border-radius: calc(20px * var(--sizing-factor));
+	object-fit: cover;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	vertical-align: top;
+	overflow: hidden;
+	cursor: pointer;
+}
+
 .footer{
 	width: calc(1411px * var(--sizing-factor));
 	height: calc(87px * var(--sizing-factor));
