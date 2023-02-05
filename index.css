@@ -108,6 +108,9 @@ button{
 		--sizing-factor: 1;
 	}
 }
+a{
+	color: inherit;
+}
 /* page background elements ------------------------------------------------------------------- */
 
 /* general */
@@ -140,7 +143,6 @@ button{
 	top: 34vh;
 
 	display: flex;
-	justify-content: space-between;
 }
 
 /* slideshow code */
@@ -626,9 +628,9 @@ button{
 }
 
 /* about me */
-#about-box{
-	width: calc(880px * var(--sizing-factor));
-	height: calc(270px * var(--sizing-factor));
+.about-box{
+	width: fit-content;
+	height: fit-content;
 	margin-left: calc(40px * var(--sizing-factor));
 
 	padding: calc(40px * var(--sizing-factor));
@@ -645,6 +647,9 @@ button{
 	letter-spacing: calc(0.08em * var(--sizing-factor));
 
 	color: #FFFFFF;
+}
+.about-box:nth-child(2){
+	margin-left: calc(200px * var(--sizing-factor));
 }
 #profile-pic-container{
 	width: calc(297px * var(--sizing-factor));
