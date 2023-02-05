@@ -686,7 +686,7 @@ a{
 	transition: 0.3s;
 }
 .paper-button{
-	width: 75%;
+	width: fit-content;
 	height: calc(64px * var(--sizing-factor));
 
 	font-family: 'Exensa Grotesk';
@@ -702,7 +702,8 @@ a{
 	box-shadow: 0px calc(4px * var(--sizing-factor)) calc(4px * var(--sizing-factor)) rgba(0, 0, 0, 0.25);
 
 	padding-top: calc(15px * var(--sizing-factor));
-	padding-left: calc(20px * var(--sizing-factor));
+	padding-left: calc(25px * var(--sizing-factor));
+	padding-right: calc(25px * var(--sizing-factor));
 	text-align: left;
 	margin-bottom: calc(20px * var(--sizing-factor));
 	
