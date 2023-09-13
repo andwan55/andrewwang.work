@@ -1,0 +1,673 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Andrew Wang's Portfolio Site: Work</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/simplegrid.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/lightcase.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/Logo 2.svg">
+    </head>
+    
+    <!-- Google tag (gtag.js) (insert here when set up)-->
+    
+    
+        <body id="home">
+            <!-- Header -->
+            <header id="top-header" class="header-home">
+                <div class="grid">
+                    <div class="col-1-1">
+                        <div class="content">
+                            <div class="logo-wrap">
+                                <a href="index.html" class="logo"></a>
+                            </div>
+                            <nav class="navigation">
+                                <input type="checkbox" id="nav-button">
+                                <label for="nav-button" onclick></label>
+                                <ul class="nav-container">
+                                    <li><a href="index.html" class="current">Home</a></li>
+                                    <li><a href="index.html#portfolio">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="work.html">Work</a></li>
+                                            <li><a href="artworks.html">Artworks</a></li>
+                                            <li><a href="papers.html">Papers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html#about">About</a></li>
+                                    <li><a class="sl-gp" href="https://github.com/andwan55"><i class="icon-github3"></i></a></li>
+                                    <li><a class="sl-ln" href="https://www.linkedin.com/in/andwan55/"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Work Section -->
+
+            <!-- modal for all images -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img">
+			</div>
+
+            <div class="wrap blog-grid grey" id="work">
+                <div class="grid grid-pad">
+                    <div class="content content-header">
+                        <div class="col-1-1">
+                            <!-- Featured Work Section -->
+                            <h2 class="name-title">Work</h2>
+                            <br>
+                        </div>
+                        <!-- Start Marvel Research Program Feature -->
+                        <div class="col-1-2" id="mrp">
+                            <article class="post-wrap">
+                                <div class="post-img">
+                                    <img src="images/post/MRP Card.svg" alt="">
+                                </div>
+                                <div class="post">
+                                    <h1 class="entry-title">Marvel Research Program<br></h1>
+                                    <div class="post-meta">
+                                        <p>April 2023 - Present</p>
+                                    </div>
+                                    <p>The Marvel Research Program (MRP) is an online program aimed at offering high school students an opportunity to explore 
+                                        data science and AI, where we guide them through conducting research using computer science tools and writing complete
+                                        research papers. I and my friends, Shreya Kochar and Aneesha Sreerama, founded MRP to make research at this level more
+                                        accessible to high schoolers, as independent research is increasingly popular.
+                                    </p><br>
+
+                                    <p>On the MRP team, I mainly serve as the UIUX designer and manage marketing endeavors, and I've designed MRP's website
+                                        end-to-end as well as assets for our brand identity. During the program's active sessions, I also act as an instructor,
+                                        usually for our flagship "Research Program in Computer Science: Theory or Applied Code" course. When we first began 
+                                        working to build the organization, I drafted many potential logos and color palettes for our business. Some concepts I 
+                                        considered included the idea of innovation, interdisciplinary work, and harmony. One idea I proposed was based on star 
+                                        imagery, as you can see in the first image below. In the end, we settled on emphasizing the overlap of industry fields 
+                                        and potential for innovation there, which resulted in the final logo (second image).
+                                    </p><br>
+    
+                                    <img src="images/work/mrp_logo_old.svg" class="logo-display" alt="Old MRP Logo">
+                                    <br><br>
+                                    
+                                    <img src="images/work/mrp_logo.png" class="logo-display" alt="MRP Final Logo">
+                                    <br><br>
+    
+                                    <p>I chose a shade of green and magenta that would complement each other to help give the logo and our business a sense
+                                        of complexity, and to provide a recognizable theme. Personally, I have not seen many organizations in the same industry
+                                        use this specific combination of colors, and I chose brighter shades to stand out more.<br><br>
+                                        After finalizing the logo and the theme, I built the website's components and designed graphics for each page and section.
+                                        I felt that our organization needed to put emphasis on how simple our goal was, and that we were a newly formed program
+                                        by students for students. To accomplish this, I opted for a gradient and accompanying 3D model vectors for a modern and 
+                                        scientific theme. Below are some sample images from the website as of the writing of this (Fall 2023), but please refer 
+                                        to the company website link below for the most accurate version.
+                                    </p><br>
+    
+                                    <!-- Final Website Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site1.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site1.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site2.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site2.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site3.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site3.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site4.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site4.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site5.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site5.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site6.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site6.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site7.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site7.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site8.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site8.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/mrp_site9.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/mrp_site9.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+    
+                                    <br>
+                                    <a class="btn btn-ghost" href="https://www.marvelprogram.com">Company Website</a>
+                                    <br><br>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End Marvel Research Program Feature -->
+                        
+                        <!-- Start Success Koach Feature -->
+                        <div class="col-1-2" id="sk_site">
+                            <article class="post-wrap">
+                                <div class="post-img">
+                                    <img src="images/post/Success Koach Project Card.svg" alt="">
+                                </div>
+                                <div class="post">
+                                    <h1 class="entry-title">Success Koach<br></h1>
+                                    <div class="post-meta">
+                                        <p>August 2022 - November 2022, April 2023 - Present</p>
+                                    </div>
+                                    <p>The first project that I was given prior to joining Success Koach was to redesign the company website and improve the company's 
+                                        brand identity. After interviewing the business owner, Harpal Kochar, I used Figma and Photoshop to test out various color 
+                                        palettes and settled on a royal blue-centered set of colors. This also kept in mind his original stylistic choices, which also
+                                        included blue. I then designed prototypes for a new company logo as well as wireframes for the new website.<br>
+                                        I wanted the logo to denote the fact that it was an academic-focused organization, while reinforcing a modern look and holding to
+                                        the company's identity. Eventually I settled on the finalized design below, and brought forward some proposals to Harpal.
+                                    </p><br>
+    
+                                    <img src="images/work/sk_logo.png" class="logo-display" alt="">
+                                    <br><br>
+    
+                                    <p>Admittedly, I had not realized that I didn't need to rebuild his website from scratch - he wanted it done on the Kajabi platform
+                                        to help host his business products and services. I readjusted and adapted the designs I had drawn up, which you can see below.
+                                    </p><br>
+    
+                                    <!-- Prototype Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype1.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype1.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype2.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype2.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype3.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype3.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype4.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype4.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype5.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype5.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_prototype6.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_prototype6.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+    
+                                    <p>After quickly familiarizing myself with the Kajabi platform's website editor, I implemented the changes and built the website you 
+                                        can see from the images below. For a more accurate experience, please visit the website at the link further below.
+                                    </p><br>
+    
+                                    <!-- Final Website Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final1.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final1.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final2.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final2.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final3.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final3.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final4.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final4.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final5.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final5.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final6.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final6.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final7.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final7.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+    
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_site_final8.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_site_final8.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+    
+                                    <br>
+                                    <a class="btn btn-ghost" href="https://www.successkoach.com">Company Website</a>
+                                    <br><br>
+                                    
+                                    <p>At my current position as Marketing Manager at Success Koach, I've also been responsible for deploying ad campaigns across 
+                                        platforms like Google, Youtube, Instagram, and Facebook. This involves creating advertisement graphics, which I've provided
+                                        some examples of below, as well as thumbnail art for videos. I am also responsible for overseeing Success Koach's podcast, 
+                                        "Koaching for College Admissions" in terms of content planning, scheduling, and creation as well as any promotional graphics 
+                                        involved (examples below).
+                                    </p><br>
+    
+                                    <!-- SK Work Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work1.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work1.jpg" alt="SK Advertisement">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work2.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work2.jpg" alt="Socials Banner">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work3.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work3.png" alt="UVP">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work4.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work4.png" alt="Youtube Video Thumbnail">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work5.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work5.jpg" alt="Homepage UVP">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work6.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work6.jpg" alt="SK Podcast Cover Art">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/sk_work7.jpg')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/sk_work7.png" alt="SK Podcast Logo">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <br>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End Success Koach Feature -->
+
+                        <!-- Begin Cookbook App Concept Feature -->
+                        <div class="col-1-2" id="cookbook_app">
+                            <article class="post-wrap">
+                                <div class="post-img">
+                                    <img src="images/post/Cookbook App Concept Card.svg" alt="">
+                                </div>
+                                <div class="post">
+                                    <h1 class="entry-title">Cookbook App Concept<br></h1>
+                                    <div class="post-meta">
+                                        <p>December 2022</p>
+                                    </div>
+                                    <p>The Cookbook App Concept (or on the report at the bottom, the "Kitchen Organizer App") is an idea that I developed during my 
+                                        third year at SBU, since I was living on my own and had to manage my own cooking. This was mainly due to how inedible the food
+                                        on campus was, and being forced on campus after COVID had settled down meant dealing with that again. As someone who values
+                                        variety in their diet, I needed a way to explore different dishes from different cuisines as well as keep track of my
+                                        current ingredient inventory easily and accurately. Although I did not work on the idea during that year, it laid the 
+                                        groundwork for when I had the chance to next semester in my senior year, from my Interdisciplinary Senior Project course.
+                                        I took the opportunity in that class to utilize the content and spend time on thinking through the app, which resulted
+                                        in the work you see below.
+                                    </p><br>
+
+                                    <p>I wanted the app to seem user-friendly and intuitive to use, ideally something that a new user could begin taking advantage 
+                                        within minutes of installing it. Thus, I chose a light green and blue palette, as I felt that would be the least jarring and 
+                                        feel more organic. The logo below uses this combination and just has some simple chef's hat imagery as well as a bookmark to
+                                        imply its purpose.
+                                    </p><br>
+    
+                                    <img src="images/work/cookbook_logo.svg" class="logo-display" alt="">
+                                    <br><br>
+    
+                                    <p>Before composing the prototype wireframes for the app, I thought about the pain points the target audience would have, and 
+                                        how the program's interface and purpose would satisfy those points. These features would become the goals of the app, listed
+                                        here: to allow users to maximize use of their ingredients, keep track of what is in stock, compose and sort custom recipes, 
+                                        generate automated recipe plans by day(s)/week based on inventory, and search for other recipes by other users. For a
+                                        complete explanation of the app's functionalities, see the project report below. 
+                                    </p><br>
+    
+                                    <!-- Wireframe Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/cookbook_wireframe1.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/cookbook_wireframe1.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/cookbook_wireframe2.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/cookbook_wireframe2.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <p>Due to the fact that the problems I mention above are faced by many people, there are many other apps that are similar in
+                                        varying degrees. Thus, I also conducted a competitor analysis to better identify where my idea could succeed and not simply
+                                        join a saturated market (see report for complete comparisons). My takeaway from my research was that there were key features
+                                        that had to be included in the final product, such as: recipe scanning, a self-learning search function, multi-platform access, 
+                                        display of trending recipes, inventory management, and a smooth, modernized user interface.<br><br>
+                                        I provide an explanation of the importance of these features as well as a proposed financial plan for developing the project
+                                        in my full report.
+                                    </p><br>
+    
+                                    <a class="btn btn-ghost" href="assets/EST441 Final Project Paper.pdf" target="_blank">Full Report</a>
+                                    <br><br>
+                                    <a class="btn btn-ghost" href="https://www.figma.com/file/1UMPZ3lImlmMyI2fCLgrNJ/EST441-App-Project?node-id=0%3A1&t=oC6U3Abm1UqZJr1E-1" target="_blank">Figma File</a>
+                                    
+                                    <br><br>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End Cookbook App Concept Feature -->
+
+                        <!-- Begin ResDec App Concept Feature -->
+                        <div class="col-1-2" id="resdec_app">
+                            <article class="post-wrap">
+                                <div class="post-img">
+                                    <img src="images/post/ResDec App Card.svg" alt="">
+                                </div>
+                                <div class="post">
+                                    <h1 class="entry-title">ResDec App Concept<br></h1>
+                                    <div class="post-meta">
+                                        <p>May 2022</p>
+                                    </div>
+    
+                                    <p>The ResDec App concept (short for Respiratory Condition Detection Application) was a project I designed and developed for my 
+                                        Human-Computer Interaction class. We were tasked with coming up with an application concept that included some sort of
+                                        statistical analysis that would be connected in some way to an interface made with the course's material in mind. This was my
+                                        first time learning of and utilizing Figma as a design tool, and after getting to know the basics, I drew up the wireframes
+                                        seen below. The frames are meant to represent the process of a user logging in and being able to submit chest X-ray scans
+                                        as images for the app to process. For the statistical analysis component of the project, I created a machine learning model
+                                        in Google Colab and coded using Python which was trained on chest scan images pulled from the online Kaggle database. I then
+                                        organized my findings in a Jupyter notebook to show the efficacy of the model, which is also available below in the Github 
+                                        link. The Figma design file with the complete wireframes is accessible below through the link as well.
+                                    </p><br>
+    
+                                    <!-- Wireframe Images Carousel -->
+                                    <div class="col-1-1 service-box cl-client-carousel-container">
+                                        <div class="cl-client-carousel">
+                                            <div class="item client-carousel-item" onclick="popup('images/work/resdec_wireframe1.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/resdec_wireframe1.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                            
+                                            <div class="item client-carousel-item" onclick="popup('images/work/resdec_wireframe2.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/resdec_wireframe2.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/resdec_wireframe3.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/resdec_wireframe3.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+
+                                            <div class="item client-carousel-item" onclick="popup('images/work/resdec_wireframe4.png')"><!-- Start of item -->
+                                                <figure>
+                                                    <img src="images/work/resdec_wireframe4.png" alt="">
+                                                </figure>
+                                            </div><!-- End of item -->
+                                        </div>
+                                        <br>
+                                    </div>
+    
+                                    <a class="btn btn-ghost" href="https://github.com/andwan55/resdetection" target="_blank">Project Github</a>
+                                    <br><br>
+                                    <a class="btn btn-ghost" href="https://www.figma.com/file/4AXOBsZcf9jUU9AAwzGbyb/Respiratory-Condition-Detection-App-Concept?node-id=0%3A1" target="_blank">Figma File</a>
+                                    
+                                    <br><br>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- End ResDec App Concept Feature -->
+
+                        <!-- End Featured Projects Section -->
+
+                        <!-- Other Projects Section -->
+                        <div class="col-1-1">
+                            <h3>Other Projects</h3>
+
+                            <!-- Begin Worryfree Legal Documents Website Collapsible -->
+                            <button class="collapsible">Worryfree Legal Documents Website</button>
+                            <div class="collapsible-content">
+                                <br>
+
+                                <p>February 2023</p><br>
+
+                                <p>I was tasked by Dolly Harish, a family member of Harpal Kochar's (from Success Koach), to redesign the website for her legal 
+                                    services business. During the project, I designed a new logo for her (see below) and utilized the Weebly platform, which her
+                                    previous website was on, to revamp her page. See below for some website screenshots and also the website link.
+                                </p><br>
+
+                                <img src="images/work/wfld_logo.svg" alt="">
+                                <br><br>
+
+                                <!-- Website Images Carousel -->
+                                <div class="col-1-1 service-box cl-client-carousel-container">
+                                    <div class="cl-client-carousel">
+                                        <div class="item client-carousel-item" onclick="popup('images/work/wfld_site1.png')"><!-- Start of item -->
+                                            <figure>
+                                                <img src="images/work/wfld_site1.png" alt="">
+                                            </figure>
+                                        </div><!-- End of item -->
+                                        
+                                        <div class="item client-carousel-item" onclick="popup('images/work/wfld_site2.png')"><!-- Start of item -->
+                                            <figure>
+                                                <img src="images/work/wfld_site2.png" alt="">
+                                            </figure>
+                                        </div><!-- End of item -->
+
+                                        <div class="item client-carousel-item" onclick="popup('images/work/wfld_site3.png')"><!-- Start of item -->
+                                            <figure>
+                                                <img src="images/work/wfld_site3.png" alt="">
+                                            </figure>
+                                        </div><!-- End of item -->
+
+                                        <div class="item client-carousel-item" onclick="popup('images/work/wfld_site4.png')"><!-- Start of item -->
+                                            <figure>
+                                                <img src="images/work/wfld_site4.png" alt="">
+                                            </figure>
+                                        </div><!-- End of item -->
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <a class="btn btn-ghost" href="https://www.worryfreelegaldocs.com/" target="_blank">Company Website</a>
+                                <br><br>
+                            </div>
+                            <!-- End Worryfree Legal Documents Website Collapsible -->
+
+                            <br>
+
+                            <!-- Begin Gesture Recognition Device Collapsible -->
+                            <button class="collapsible">Gesture Recognition Device</button>
+                            <div class="collapsible-content">
+                                <br>
+
+                                <p>May 2022</p><br>
+
+                                <p>For my Introductory Interdisciplinary Project course, I worked with a team to design, program, test, and present a gesture 
+                                    recognition device using Arduino and a machine learning model. The device, in the rough shape of a short wand, was capable of
+                                    recognizing motions drawn with it such as loops, arcs, and lines. Below is the Github repository for the project.  
+                                </p><br>
+
+                                <a class="btn btn-ghost" href="https://github.com/KostadinDev/deep-gestures" target="_blank">Project Github</a>
+                                <br><br>
+                            </div>
+                            <!-- End Gesture Recognition Device Collapsible -->
+
+                            <br>
+
+                            <!-- Begin Musical Santa Toy Collapsible -->
+                            <button class="collapsible">Musical Santa Toy</button>
+                            <div class="collapsible-content">
+                                <br>
+
+                                <p>December 2020</p><br>
+
+                                <p>I and a friend of mine, Chiron Tran, helped a mutual friend Matthew Cho with recycling an old Santa Claus drummer toy into a 
+                                    new version of it that would be capable of moving to the beat of a preuploaded song, which would play when turned on. I programmed
+                                    an Arduino Uno using the Minim libaries and the Processing IDE for the toy, allowing it the move in sync with a song and flash
+                                    lights on beat as well. Below is the Github repository for the toy and the Youtube video Matthew shot and edited of us working
+                                    on the project.
+                                </p><br>
+
+                                <!-- Toy Images Carousel -->
+                                <div class="col-1-1 service-box cl-client-carousel-container">
+                                    <div class="cl-client-carousel">
+                                        <div class="item client-carousel-item" onclick="popup('images/work/santa_toy_img.svg')"><!-- Start of item -->
+                                            <figure>
+                                                <img src="images/work/santa_toy_img.svg" alt="">
+                                            </figure>
+                                        </div><!-- End of item -->
+                                    </div>
+                                </div><br>
+
+                                <a class="btn btn-ghost" href="https://github.com/andwan55/Musical-Santa-Toy" target="_blank">Project Github</a>
+                                <br><br>
+                                <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=PjTPti3LElY&ab_channel=MattChoArchives2" target="_blank">Youtube Video</a>
+                                <br><br>
+                            </div>
+                            <!-- End Musical Santa Toy Collapsible -->
+
+                            <br>
+
+                            <!-- Begin Excel DSS Collapsible -->
+                            <button class="collapsible">Excel DSS Project</button>
+                            <div class="collapsible-content">
+                                <br>
+
+                                <p>The final project for my Applications Software for Information Management course, using Excel VBA - it is intended for a 
+                                    hypothetical case of a restaurant manager seeking to optimize finances for employee salaries and orders.
+                                </p><br>
+
+                                <a class="btn btn-ghost" href="https://github.com/andwan55/Decision-Support-System-DSS-Restaurant-Finance-Optimization-Program" target="_blank">Project Github</a>
+                                <br><br>
+                            </div>
+                            <!-- End Excel DSS Collapsible -->
+
+                            <br>
+                        </div>
+                        <!-- End Other Projects Section -->
+
+                    </div>
+                </div>
+                <br><br>
+                
+            </div>
+            <!-- End Work Section -->
+
+            <!-- Footer -->
+            <footer class="wrap">
+                <div class="social-footer">
+                    <div class="grid grid-pad">
+                        <div class="col-1-1" >
+                            <div class="content">
+                                <div class="logo-wrap">
+                                    <a href="#home"><img class="logo" src="images/Logo Alt.svg"></a>
+                                </div>
+                                <p class="copyright"><br>© Copyright 2023 Andrew Wang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- JS -->
+            <script src="js/jquery.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/mixitup.js"></script>
+            <script src="js/smoothscroll.js"></script>
+            <script src="js/jquery.nav.js"></script>
+            <script src="js/owl-carousel/owl.carousel.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/lightcase.min.js"></script>
+            </body>
+        </html>

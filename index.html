@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Andrew Wang's Portfolio Site</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/simplegrid.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/lightcase.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/Logo 2.svg">
+    </head>
+    
+    <!-- Google tag (gtag.js) (insert here when set up)-->
+    
+    
+        <body id="home">
+            <!-- Header -->
+            <header id="top-header" class="header-home">
+                <div class="grid">
+                    <div class="col-1-1">
+                        <div class="content">
+                            <div class="logo-wrap">
+                                <a href="#0" class="logo"></a>
+                            </div>
+                            <nav class="navigation">
+                                <input type="checkbox" id="nav-button">
+                                <label for="nav-button" onclick></label>
+                                <ul class="nav-container">
+                                    <li><a href="#home" class="current">Home</a></li>
+                                    <li><a href="#portfolio">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="work.html">Work</a></li>
+                                            <li><a href="artworks.html">Artworks</a></li>
+                                            <li><a href="papers.html">Papers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a class="sl-gp" href="https://github.com/andwan55"><i class="icon-github3"></i></a></li>
+                                    <li><a class="sl-ln" href="https://www.linkedin.com/in/andwan55/"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Parallax Section -->
+            <div class="parallax-section parallax1">
+                <div class="grid grid-pad">
+                    <div class="col-1-1">
+                        <div class="content content-header" >
+                            <h2 class="name-title"><br>Hi! I'm Andrew Wang.</h2>
+                            <h3>A web developer/product designer,<br>and this is what I've been working on.</h3>
+                            <div class="line"></div>
+                            <p>Marketing Manager @ <a href="https://www.successkoach.com/">Success Koach</a><br>
+                            Co-founder of the <a href="https://www.marvelprogram.com">Marvel Research Program</a><br>
+                            Technological Systems Management '23 @ Stony Brook University<br><br>
+                            </p>
+                            <a class="btn btn-ghost" href="#portfolio">View Portfolio</a>
+                            <p><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for all images -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img">
+			</div>
+
+            <!-- Portfolio Section -->
+            <div class="wrap blog-grid grey" id="portfolio">
+                <!-- Featured Work Section -->
+                <div class="grid grid-pad">
+                    <div class="col-1-1">
+                        <div class="content content-header">
+                            <h3><a href="work.html">Work ></a></h3>
+                            <p>Featured work covering web development, graphic design, and software development.</p><br><br>
+                        </div>
+
+                        <div class="col-1-3">
+                            <article class="recent-wrap">
+                                <div class="recent-work">
+                                    <div class="overlay">
+                                        <h2><a href="work.html#mrp">Marvel Research Program</a></h2>
+                                    </div>
+                                    <a><img src="images/post/MRP Card.svg" alt=""></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-1-3">
+                            <article class="recent-wrap">
+                                <div class="recent-work">
+                                    <div class="overlay">
+                                        <h2><a href="work.html#sk_site">Success Koach</a></h2>
+                                    </div>
+                                    <a><img src="images/post/Success Koach Project Card.svg" alt=""></a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-1-3">
+                            <article class="recent-wrap">
+                                <div class="recent-work">
+                                    <div class="overlay">
+                                        <h2><a href="work.html#resdec_app">ResDec App Concept</a></h2>
+                                    </div>
+                                    <a><img src="images/post/ResDec App Card.svg" alt=""></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <!-- Featured Artworks Section -->
+                <div class="grid grid-pad">
+                    <div class="col-1-1">
+                        <div class="content content-header">
+                            <h3><a href="artworks.html">Artworks ></a></h3>
+                            <p>Past artworks in both digital and traditional mediums.</p><br>
+                        </div>
+                    </div>
+                    <!-- Digital Artworks -->
+                    <div class="col-1-2 service-box cl-client-carousel-container">
+                        <div class="cl-client-carousel">
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/Shreya Banner Graphic.svg" alt="" onclick="popup('images/work/Shreya Banner Graphic.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+                            
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0014.svg" alt="" onclick="popup('images/work/0014.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/Diya Campaign Poster.svg" alt="" onclick="popup('images/work/Diya Campaign Poster.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0016.svg" alt="" onclick="popup('images/work/0016.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+                        </div>
+                    </div>
+                    <!-- Traditional Artworks -->
+                    <div class="col-1-2 service-box cl-client-carousel-container">
+                        <div class="cl-client-carousel">
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0001.svg" alt="" onclick="popup('images/work/0001.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+                            
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0002.svg" alt="" onclick="popup('images/work/0002.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0003.svg" alt="" onclick="popup('images/work/0003.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0004.svg" alt="" onclick="popup('images/work/0004.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0005.svg" alt="" onclick="popup('images/work/0005.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0006.svg" alt="" onclick="popup('images/work/0006.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0007.svg" alt="" onclick="popup('images/work/0007.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0008.svg" alt="" onclick="popup('images/work/0008.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0009.svg" alt="" onclick="popup('images/work/0009.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0010.svg" alt="" onclick="popup('images/work/0010.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0011.svg" alt="" onclick="popup('images/work/0011.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0012.svg" alt="" onclick="popup('images/work/0012.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+
+                            <div class="item client-carousel-item"><!-- Start of item -->
+                                <figure>
+                                    <img src="images/work/0013.svg" alt="" onclick="popup('images/work/0013.svg')">
+                                </figure>
+                            </div><!-- End of item -->
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <!-- Featured Papers Section -->
+                <div class="grid grid-pad" id="papers">
+                    <div class="col-1-1">
+                        <div class="content content-header content-papers">
+                            <h3><a href="papers.html">Papers ></a></h3>
+                            <p>Selected papers on a range of topics including education policies, physics, ethics, and more.</p><br><br>
+                            <div class="papers-content">
+                                <a class="btn btn-ghost" href="assets/EST304 Final Paper.pdf" target="_blank">Re-evaluation of Technological Tools for Improving Education</a><br><br>
+                                <a class="btn btn-ghost" href="assets/EST441 Final Project Paper.pdf" target="_blank">Kitchen Organizer App Report</a><br><br>
+                                <a class="btn btn-ghost" href="assets/NLP Final Project Paper.pdf" target="_blank">Designing Probes to Analyze GPT-J Predictions with Sentiment and Emotion Associations for USA Regions</a><br><br>
+                                <a class="btn btn-ghost" href="assets/EST440 Assessment Report.pdf" target="_blank">Applications of Particle Accelerators and Developments in Miniaturization</a><br><br>
+                                <a class="btn btn-ghost" href="assets/est331-writing-assignment-2-final-draft.pdf" target="_blank">Climate Change and Morality’s Role</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Section -->
+
+            <!-- Start About Section -->
+            <div class="wrap blog-grid grey" id="about">
+                <div class="grid grid-pad">
+                    <div class="col-1-1">
+                        <div class="content content-header">
+                            <h2>About Me</h2>
+                            <div class="about-content">
+                                <p class="about-text">Hi there, my name is Andrew Wang! I graduated in 2023 from Stony Brook University with a major in 
+                                    Technological Systems Management and a specialization in Computer Science.<br>
+                                    I grew up in Fremont, California and have a passion for game and graphic design as well as art. I enjoy working with colors 
+                                    and designing interfaces. Much of my experience has to do with computer science-related projects as well since I took several 
+                                    courses on them in university. For a more detailed list of my skills, see my resume below.<br>
+                                    In my free time, I like to learn new recipes, play tennis & badminton, and chip away at my video game library.
+                                </p>
+                                <img class="about-pic" src="images/Profile Picture.svg" alt="Andrew Wang Profile Picture">
+                            </div>
+                            <br>
+                            <a class="btn btn-ghost" href="assets/Resume.pdf">View Resume</a><br><br>
+                            <a class="btn btn-ghost" href="mailto: andwan55@gmail.com">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End About Section -->
+
+            <!-- Footer -->
+            <footer class="wrap">
+                <div class="social-footer">
+                    <div class="grid grid-pad">
+                        <div class="col-1-1" >
+                            <div class="content">
+                                <div class="logo-wrap">
+                                    <a href="#home"><img class="logo" src="images/Logo Alt.svg"></a>
+                                </div>
+                                <p class="copyright"><br>© Copyright 2023 Andrew Wang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <!-- JS -->
+            <script src="js/jquery.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/mixitup.js"></script>
+            <script src="js/smoothscroll.js"></script>
+            <script src="js/jquery.nav.js"></script>
+            <script src="js/owl-carousel/owl.carousel.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/lightcase.min.js"></script>
+            </body>
+        </html>
