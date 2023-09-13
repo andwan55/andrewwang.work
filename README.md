@@ -1,3 +1,2 @@
 # Portfolio site contents
-This portfolio site has a homepage, three subsections of portfolios (projects, artworks, papers), an about me page, and links to important documents & sites (Youtube, LinkedIn, Github, etc.)
-(mobile version WIP)
+This portfolio site has a homepage, page for recent works, page for artworks, and page for written papers. It is intended as a showcase of my talents, interests, and skills.
