@@ -19,6 +19,7 @@ Text Gray #323232
   --darkred: #BB3433;
   --gray: #323232;
   --darkgray: #181818;
+  --lightgray: #8f8f8f;
   --bkgd: #F5F5F5;
   --darkbkgd: #E9E9E9;
 }
@@ -35,6 +36,11 @@ Text Gray #323232
 @font-face {
 	font-family: TT Norms Pro;
 	src: url('fonts/TT\ Norms\ Pro\ Regular.otf');
+}
+@font-face {
+	font-family: TT Norms Pro;
+  font-weight: bold;
+	src: url('fonts/TT\ Norms\ Pro\ Bold.otf');
 }
 
 *, *:before, *:after {
@@ -53,19 +59,23 @@ Text Gray #323232
 }
 
 a {
-  color:var(--blue);
+  color: var(--blue);
+  overflow: hidden;
+  text-decoration: underline 0.2em rgba(37, 97, 188, 0);
+  transition: all .3s linear;
 }
 
 a:hover {
   color: var(--darkblue);
+  text-decoration-color: rgba(37, 97, 188, 1);
 }
 
 a, img, .overlay, input, textarea, .plan-wrap p, .filters .filter {
 /*transition*/
-  -webkit-transition: all .12s linear;
-     -moz-transition: all .12s linear;
-       -o-transition: all .12s linear;
-          transition: all .12s linear;
+  -webkit-transition: all .15s linear;
+     -moz-transition: all .15s linear;
+       -o-transition: all .15s linear;
+          transition: all .15s linear;
 }
 
 body {
@@ -79,7 +89,7 @@ body, input, textarea {
   font-family: 'TT Norms Pro';
 }
 
-h1,h2,h3,h4,h5,h6, .navigation a, .btn, .filters .filter, .collapsible {
+h1,h2,h3,h4,h5,h6, .navigation a, .btn, .filters .filter, .collapsible, .study {
   font-family: 'Exensa Grotesk';
   font-weight: bold;
   letter-spacing: 0.08em;
@@ -115,10 +125,30 @@ h4,h5,h6 {
   line-height: .5em;
 }
 
-.text-header{
-  font-family: 'Exensa Grotesk';
+ul {
+  padding-left: 2em;
+  list-style: square;
+}
+
+ul ul {
+  list-style: circle;
+}
+
+.text-bold, .text-bold-alt {
+  display: inline;
   font-weight: bold;
-  font-size: 1.2em;
+  letter-spacing: 0.08em;
+}
+
+.text-subtitle {
+  font-size: 0.8em;
+  line-height: 3em;
+  color: var(--lightgray);
+  text-align: center;
+}
+
+.text-bold-alt {
+  color: var(--blue);
 }
 
 blockquote {
@@ -230,7 +260,7 @@ blockquote p {
   color: #1abc9c;
 }
 
-.collapsible {
+.collapsible, .study {
   position: relative;
   width: 80%;
   font-size: 1.125em;
@@ -239,9 +269,9 @@ blockquote p {
   color: #fff;
   border: none;
   /*border-radius*/
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
   background: var(--blue);
   /*transition*/
   -webkit-transition: all .15s linear;
@@ -250,11 +280,28 @@ blockquote p {
           transition: all .15s linear;
 }
 
-.collapsible:hover {
+.study {
+  width: 100%;
+  letter-spacing: 0.12em;
+  /*transition*/
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+       -o-transition: all .3s linear;
+          transition: all .3s linear;
+}
+
+.study img {
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.5em;
+}
+
+.collapsible:hover, .study:hover{
   background: var(--darkblue);
 }
 
-.collapsible:after {
+.collapsible:after, .study:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -262,7 +309,7 @@ blockquote p {
   margin-left: 5px;
 }
 
-.collapsible-content {
+.collapsible-content, .study-content{
   width: 80%;
   padding: 0 30px;
   margin-left: 0;
@@ -273,8 +320,22 @@ blockquote p {
   transition: max-height 0.2s ease-out;
 }
 
-.collapsible-content img {
+.study-content {
+  width: 100%;
+  transition: max-height 0.35s ease-in-out;
+}
+
+.collapsible-content img, .study-content img {
    max-width: 100%;
+}
+
+.study-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* *********************************************************
@@ -283,8 +344,10 @@ blockquote p {
 
 #top-header {
   position: fixed;
+  left: 50%;
+  transform: translate(-50%, 50%);
   z-index: 1000;
-  width: 100%;
+  width: 80%;
   padding: 10px 0;
   background-color: var(--bkgd);
 /*transition*/
@@ -293,6 +356,8 @@ blockquote p {
        -o-transition: all .15s linear;
           transition: all .15s linear;
   box-shadow: none;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
 }
 
 #top-header .grid {
@@ -773,7 +838,6 @@ blockquote p {
 
 .content h3 {
   text-align: left;
-  margin-bottom: 15px;
 }
 
 .papers-content {
@@ -1753,7 +1817,11 @@ footer p, footer a {
 
 @media handheld, only screen and (max-width: 1200px) {
   #top-header {
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100%;
     padding: 15px 20px;
+    border-radius: 0px;
   }
 
   #price-tables #plans .plan {
@@ -1778,7 +1846,11 @@ footer p, footer a {
 @media handheld, only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   #top-header {
     position: fixed;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100%;
     padding: 8px 0;
+    border-radius: 0px;
   }
 
   .logo-wrap {
@@ -1909,12 +1981,20 @@ footer p, footer a {
   #price-tables #plans > li:nth-child(2n) {
     margin-right: 0;
   }
+
+  .collapsible-content img, .study-content img {
+    border-radius: 8px;
+  }
 }
 
 @media handheld, only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #top-header {
     position: fixed;
+    left: 0%;
+    transform: translate(0%, 0%);
+    width: 100%;
     padding: 8px 0;
+    border-radius: 0px;
   }
 
   .logo-wrap {
@@ -2123,5 +2203,9 @@ footer p, footer a {
   footer .content{
     display: flex;
     align-items: center;
+  }
+
+  .collapsible-content img, .study-content img {
+    border-radius: 8px;
   }
 }
