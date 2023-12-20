@@ -2,6 +2,7 @@ window.addEventListener("scroll", (event) => {
 	let scroll = this.scrollY;
 	if (scroll > 10) {
 		document.querySelector("#top-header").style.boxShadow = '0px 4px 4px rgba(0, 0, 0, 0.25)';
+		document.querySelector("#top-header").style.backgroundColor = 'rgb(245, 245, 245, 0.70)';
 	} else {
 		document.querySelector("#top-header").style.boxShadow = 'none';
 	}
@@ -34,32 +35,53 @@ function popup(imgsrc){ // function to display popup image of clicked image
 }
 
 $(document).ready(function() {
-   
+	// Collapsible Accordion code
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){ //before
+			content.style.maxHeight = null;
+			this.style.borderRadius = "16px";
+			content.style.boxShadow = "none";
+			content.style.borderRadius = "0";
+			} else { //after
+			content.style.maxHeight = content.scrollHeight + "px";
+			this.style.borderRadius = "16px 16px 0 0";
+			content.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
+			content.style.borderRadius = "0 0 16px 16px ";
+			}
+		});
+	}
+
+	// Study Accordion code
+	var coll = document.getElementsByClassName("study");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){ //before
+			content.style.maxHeight = null;
+			this.style.borderRadius = "16px";
+			content.style.boxShadow = "none";
+			content.style.borderRadius = "0";
+			} else { //after
+			content.style.maxHeight = content.scrollHeight + "px";
+			this.style.borderRadius = "16px 16px 0 0";
+			content.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
+			content.style.borderRadius = "0 0 16px 16px ";
+			}
+		});
+	}
+
   (function($) {
    
       $.fn.parallax = function(options) {
-
-		// Collapsible Accordion code
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var content = this.nextElementSibling;
-				if (content.style.maxHeight){ //before
-				content.style.maxHeight = null;
-				this.style.borderRadius = "10px";
-				content.style.boxShadow = "none";
-				content.style.borderRadius = "0";
-				} else { //after
-				content.style.maxHeight = content.scrollHeight + "px";
-				this.style.borderRadius = "10px 10px 0 0";
-				content.style.boxShadow = "0px 4px 4px rgba(0, 0, 0, 0.25)";
-				content.style.borderRadius = "0 0 10px 10px ";
-				}
-			});
-		}
    
 		var windowHeight = $(window).height();
 
