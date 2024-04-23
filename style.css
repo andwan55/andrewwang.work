@@ -34,14 +34,21 @@ Text Gray #323232
 	src: url('fonts/ExensaGrotesk-Bold.otf');
 }
 @font-face {
-	font-family: TT Norms Pro;
-	src: url('fonts/TT\ Norms\ Pro\ Regular.otf');
+	font-family: Albert Sans;
+  font-weight: 400;
+	src: url('fonts/AlbertSans-VariableFont_wght.ttf');
 }
 @font-face {
-	font-family: TT Norms Pro;
-  font-weight: bold;
-	src: url('fonts/TT\ Norms\ Pro\ Bold.otf');
+	font-family: Albert Sans Bold;
+  font-weight: 600;
+	src: url('fonts/AlbertSans-VariableFont_wght.ttf');
 }
+@font-face {
+	font-family: Albert Sans Italic;
+  font-weight: 400;
+	src: url('fonts/AlbertSans-Italic-VariableFont_wght.ttf');
+}
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -86,7 +93,7 @@ body {
 }
 
 body, input, textarea {
-  font-family: 'TT Norms Pro';
+  font-family: 'Albert Sans';
 }
 
 h1,h2,h3,h4,h5,h6, .navigation a, .btn, .filters .filter, .collapsible, .study {
@@ -136,8 +143,7 @@ ul ul {
 
 .text-bold, .text-bold-alt {
   display: inline;
-  font-weight: bold;
-  letter-spacing: 0.08em;
+  font-family: 'Albert Sans Bold';
 }
 
 .text-bold-alt {
